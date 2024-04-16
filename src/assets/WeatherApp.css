@@ -1,0 +1,149 @@
+/* @font-face {
+    font-family: "Roboto";
+    src: url(./fonts/Roboto-Regular.ttf);
+
+    font-family: "Roboto Bold";
+    src: url(./fonts/Roboto-Bold.ttf);
+} */
+
+:root {
+  --primary: rgb(255, 255, 255);
+  --seconday: rgba(255, 255, 255, 0.568);
+  --lowWhite: rgba(255, 255, 255, 0.712);
+}
+
+html body {
+  align-items: center;
+  background-color: rgb(10, 10, 10);
+  display: flex;
+  /* font-family: "Roboto"; */
+  font-size: 16px;
+  font-weight: 400;
+  height: 100vh;
+  justify-content: center;
+  margin: 0;
+}
+
+input {
+  border-radius: 5px;
+  border-style: none;
+  background-color: rgba(90, 90, 90, 0.5);
+  padding: 5px 15px;
+  width: 100%;
+  color: var(--seconday);
+}
+
+input:focus {
+  box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.171);
+  outline: none;
+}
+
+ul li {
+  margin: 20px 0px;
+}
+
+h2 {
+  font-size: 90px;
+}
+
+.main-container {
+  background-image: url("./images/fog.jpg");
+  background-image: url("./images/eric-masur-9JxubXPaidg-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1px;
+  color: white;
+  display: flex;
+  height: 80vh;
+  padding: 3rem;
+  width: 80vw;
+  margin-bottom: 10px;
+  background-color: rgba(56, 75, 92, 0.247);
+  position: relative;
+}
+
+#basic-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 60%;
+  height: max-content;
+  /* box-sizing: border-box; */
+  position: absolute;
+  bottom: 0;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.829);
+  padding-bottom: 2rem;
+  margin: 0rem;
+}
+
+#panel {
+  backdrop-filter: blur(5px) brightness(0.5);
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.3),
+    rgba(0, 0, 0, 0.3)
+  );
+  background-color: black;
+  background: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 2rem;
+  height: 100%;
+  width: 30%;
+  color: var(--seconday);
+}
+
+.content {
+  z-index: 1;
+}
+
+.subtitle {
+  margin: 20px 0px 3px 0px;
+  font-size: 12px;
+}
+
+#cityLabel {
+  font-size: 40px;
+  /* background-color: beige; */
+}
+
+.secondaryLabel {
+  font-size: 20px;
+  /* background-color: blueviolet; */
+}
+
+#linkback {
+  position: relative;
+  /* background-color: aquamarine; */
+  text-align: center;
+  color: aliceblue;
+  font-size: 10px;
+  font-weight: 100;
+}
+
+#linkback > a {
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: 600;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate; 
+  border-spacing: 0 10px;
+}
+
+.right {
+  text-align: right;
+}
+
+.left {
+  text-align: left;
+}
+
+#appTitle {
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.829);
+  font-size: 12px;
+}
