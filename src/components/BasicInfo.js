@@ -7,9 +7,7 @@ export const BasicInfo = ({ data }) => {
       <h4 id="cityLabel">
         {data.location.name}, {data.location.country}
       </h4>
-      <h6 className="secondaryLabel">
-        {data.current.condition.text}
-      </h6>
+      <h6 className="secondaryLabel">{data.current.condition.text}</h6>
     </div>
   );
 };
